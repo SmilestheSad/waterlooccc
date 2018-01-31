@@ -19,13 +19,14 @@ for i in range(len(line)-2):
         happy = happy + 1
     elif line[i:i+3] == ":-(":
         sad = sad + 1
-      
+
+
 if happy == 0 and sad == 0:
-    print "none"
+    print("none")
 elif happy == sad:
-    print "unsure"
+    print("unsure")
 elif happy > sad:
-    print "happy"
+    print("happy")
 else:
-    print "sad"
+    print("sad")
 

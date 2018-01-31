@@ -19,4 +19,4 @@ for i in range(len(word)):
                                  # next consonant   
         newWord = newWord + closestVowel [j] + nextConsonant[j]
 
-print newWord
+print(newWord)
