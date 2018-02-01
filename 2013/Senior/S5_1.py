@@ -25,8 +25,9 @@ def factors(x):
             f.append(x / i)
     return f
 
-file = open("s5.12.in", 'r')
-N = int(file.readline().strip())
+# file = open("s5.12.in", 'r')
+# N = int(file.readline().strip())
+n=2013
     
 # m is a list of max values for each number
 m = []
@@ -42,4 +43,4 @@ for i in range(1, N+1):
         if h <= N and cost < m[h]:
             m[h] = cost
     
-print m[N]
+print(m[N])

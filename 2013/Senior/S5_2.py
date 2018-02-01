@@ -75,4 +75,4 @@ while N > 1:
     else:                    # if N is prime, go back only 1
         N = N - 1
         cost = cost + N
-print cost
+print(cost)
