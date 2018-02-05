@@ -40,3 +40,5 @@ def pascalT(n,m):
 
 
 print(pascalT(6,3))
+
+

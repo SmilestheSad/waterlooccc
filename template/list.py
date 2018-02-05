@@ -21,3 +21,8 @@ ones = (input_number%10)
 tens = int(str(input_number)[-2])
 hundreds = int(str(input_number)[-3])
 thousands = int(str(input_number)[-4])
+
+
+#http://www.cemc.uwaterloo.ca/contests/computing/2011/stage1/seniorEn.pdf J2
+# 2016 J1
+#http://www.cemc.uwaterloo.ca/contests/computing/2014/stage%201/juniorEn.pdf   J3
