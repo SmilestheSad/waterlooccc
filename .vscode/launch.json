@@ -9,7 +9,7 @@
             "name": "Python",
             "type": "python",
             "request": "launch",
-            "stopOnEntry": true,
+            "stopOnEntry": false,
             "pythonPath": "${config:python.pythonPath}",
             "program": "${file}",
             "cwd": "${workspaceFolder}",
@@ -115,7 +115,7 @@
             "name": "Python: PySpark",
             "type": "python",
             "request": "launch",
-            "stopOnEntry": true,
+            "stopOnEntry": false,
             "osx": {
                 "pythonPath": "${env:SPARK_HOME}/bin/spark-submit"
             },

@@ -1,11 +1,11 @@
-def mins2string(mins):
+def mins2Order(mins):
     hour=mins//60
     if ( hour == 0):
         hour=12
     mins=mins%60
     #convert to string
     hourString=str(hour)
-    if (mins <=9):
+    if mins <= 9 :
         minsString='0' + str(mins)
     else:
         minsString = str(mins)
@@ -26,6 +26,6 @@ vInput=['180']
 mins=int(vInput[0])
 count=0
 for i in range(mins+1):
-    count = count + mins2string(i)
+    count = count + mins2Order(i)
 
 print(count)
