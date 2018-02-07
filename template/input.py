@@ -31,7 +31,7 @@ def readFile(filename):
 vInput = readInput() 
 print(vInput)   # vInput= ['1 2 3 4', '9 4 5 6', '8 4 5 6', '0 4 5 6'] 
 #Use below for debug and development
-vInput= ['1 2 3 4', '9 4 5 6', '8 4 5 6', '0 4 5 6'] 
+# vInput= ['1 2 3 4', '9 4 5 6', '8 4 5 6', '0 4 5 6'] 
 
 #Sample Input input2.txt
 # First line is question either 1 or 2
@@ -42,11 +42,11 @@ vInput= ['1 2 3 4', '9 4 5 6', '8 4 5 6', '0 4 5 6']
 # 3
 # 5 1 4
 # 6 2 4
-vInput = readInput()  # vInput = ['1','3','5 1 4','6 2 4']
-vQuestion=vInput[0]
-vPersonCount=int(vInput[1])
-vCountry1Speed= vInput[2].split()
-vCountry2Speed= vInput[3].split()
+# vInput = readInput()  # vInput = ['1','3','5 1 4','6 2 4']
+# vQuestion=vInput[0]
+# vPersonCount=int(vInput[1])
+# vCountry1Speed= vInput[2].split()
+# vCountry2Speed= vInput[3].split()
 
 # vFirstLine=vInput[0]
 # vFirstStringFromFirstLine = vInput[0].split()[0]
