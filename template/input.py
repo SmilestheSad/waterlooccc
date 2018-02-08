@@ -6,6 +6,7 @@
 # Option2: From STDIN keyboard
 # python <yourpython.py>
 # type input and enter...... <Control>+<Z> followed by <Enter> ends input
+#victor change
 
 from sys import stdin
 def readInput():
