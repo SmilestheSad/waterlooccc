@@ -5,8 +5,8 @@ def readInput():
     for line in stdin:
         inputList.append(line.strip())
     return inputList    
-vinput = ['12','4']
-#vinput=readInput()
+#vinput = ['12','4']
+vinput=readInput()
 
 
 base=int(vinput[0])
