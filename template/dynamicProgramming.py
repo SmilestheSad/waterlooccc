@@ -16,11 +16,10 @@ def fib(n):
         return 1
     return fib(n-1)+fib(n-2)
 
-# l=[]
-# for i in range(9):
-#     l.append(fib(i))
-
-# print(l)    
+l=[]
+for i in range(9):
+    l.append(fib(i))
+print(l)  #[0, 1, 1, 2, 3, 5, 8, 13, 21]    
 
 
 # Pascal Triangel
@@ -39,6 +38,6 @@ def pascalT(n,m):
     return pascalT(n-1,m) + pascalT(n-1,m-1)
 
 
-print(pascalT(6,3))
-
+print(pascalT(6,3))  # 10
+print(pascalT(5,2))  # 4
 

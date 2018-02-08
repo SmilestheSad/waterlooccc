@@ -1,12 +1,16 @@
 ######## Number shift 2017 J2#######
 def shiftNumber(base,shift):
-    total=0  
-    if shift > 0:
-        for i in range(0,shift+1):
-            total = total + base*10**i
-    else:
-        total=base
+    ######Traditional way
+    # total=0  
+    # if shift > 0:
+    #     for i in range(shift+1):
+    #         total = total + base*10**i
+    # else:
+    #     total=base
+    ######Smart way
+    total = sum ( [ base*10**i for i in range(shift+1)])    
     return total
+
 #print(shiftNumber(12,3))
 
 #######Get factor list
@@ -75,7 +79,7 @@ print(c.most_common())  # [(5, 3), (1, 2), (4, 2), (3, 1)]
 print(c.most_common()[0][0] , c.most_common()[0][1] ) # Top occurence and count
 print(c.most_common()[-1][0] , c.most_common()[-1][1] ) # Bottom occurence and count
 
-# Common counter 
+# Common counter method
 var1 = list(c.keys())  # convert counter element to unique list  [1,3,4,5] 
 var2 = list(c.values())  # convert counter element to unique list  [2,1,2,3] 
 var3 = dict(c)  # convert to dict {1: 2, 3: 1, 4: 2, 5: 3}

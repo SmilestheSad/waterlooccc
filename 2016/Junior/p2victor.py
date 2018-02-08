@@ -1,9 +1,4 @@
 from sys import stdin
-#import math
-
-
-#Read Input Function
-
 def readInput():
     inputList=[]
     for line in stdin:
@@ -16,7 +11,6 @@ vInput=[x.split() for x in vInput]
 
 basetotal = int(vInput[0][0]) + int(vInput[0][1]) + int(vInput[0][2]) + int(vInput[0][3])
 result = "magic"
-
 
 
 for i in range(4):
