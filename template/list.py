@@ -14,7 +14,8 @@ squares.pop()   #remove last element and return popped element
 squares.insert(3,9999) # insert 999 at index 3 (after fourth element)
 
 #List  Operation
-len(squares)   #Length,
+listLength = len(squares)   #Length
+uniqueList = set(squares)  # remove duplicate
 concatenationList = squares + [5,6,7,8] # Join two list
 mutiplyList = ['a'] * 20  # Generate list with 20 a's
 listAverge = sum(concatenationList)/len(concatenationList) # total/number of elements

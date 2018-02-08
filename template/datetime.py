@@ -1,7 +1,11 @@
 from datetime import datetime,date,time,timedelta
-
+# – date object: stores the date
+# – time object: stores the time
+# – datetime object: stores both the date and the time
+# - timedelta object: store time difference
 vDatetime1 = datetime(2017,10,8,10,56)
 vDatetime2 = datetime(2017,12,8,11,56)
+
 #Format1
 fmt1 = '%Y-%m-%d %H:%M:%S'
 dateString1 = '2010-01-01 17:31:22'

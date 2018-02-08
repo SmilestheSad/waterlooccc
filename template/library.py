@@ -59,5 +59,23 @@ def combination(n,r):
 def permutations(n,r):
     # n!/(n-r)!
    return int(math.factorial(n)/math.factorial(n-r))
-
 #print(combination(4,3),permutations(4,3))
+
+
+# Data Set sort,unique and count
+from collections import Counter
+
+c = Counter("aaabbdddccceee") 
+print(c.most_common())  # [('c', 3), ('a', 3), ('d', 3), ('e', 3), ('b', 2)]
+c = Counter(['red', 'blue', 'red', 'green', 'blue', 'blue'])
+print(c.most_common()) #[('blue', 3), ('red', 2), ('green', 1)]
+
+c = Counter([1,3,1,4,4,5,5,5])
+print(c.most_common())  # [(5, 3), (1, 2), (4, 2), (3, 1)]
+print(c.most_common()[0][0] , c.most_common()[0][1] ) # Top occurence and count
+print(c.most_common()[-1][0] , c.most_common()[-1][1] ) # Bottom occurence and count
+
+# Common counter 
+var1 = list(c.keys())  # convert counter element to unique list  [1,3,4,5] 
+var2 = list(c.values())  # convert counter element to unique list  [2,1,2,3] 
+var3 = dict(c)  # convert to dict {1: 2, 3: 1, 4: 2, 5: 3}

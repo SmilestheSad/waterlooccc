@@ -17,13 +17,11 @@
 vInput = ['1987']
 year = int(vInput[0]) + 1
 
-duplicateFlag = True
-while duplicateFlag:
-    duplicateFlag = False
-    yearString = str(year)
-    for digit in yearString:
-        if yearString.count(digit) > 1:
-            duplicateFlag = True
-    year = year + 1
+while True:
+    newYearString = set(str(year))
+    if ( len(newYearString) == 4):
+        print(year)
+        break
+    else:
+        year = year + 1
 
-print(year)
