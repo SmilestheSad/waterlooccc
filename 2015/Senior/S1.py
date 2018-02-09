@@ -7,19 +7,19 @@
 # make this an easy problem
 
 
-file = open("s1.5.in", "r")
-k = int(file.readline())
+# file = open("s1.5.in", "r")
+# k = int(file.readline())
+vInput = ['4', '3', '0', '3', '0']
+vInput = ['10','1','3','5','4','0','0','7','0','0','6']
 
-list = []
-for i in range(k):
-    n = int(file.readline())
-    if n > 0:
-        list.append(n)
+k = int(vInput[0])
+inputList = [int(x) for x in vInput[1:]]
+newList = []
+for i in inputList:
+    if i == 0:
+        newList.pop()
     else:
-        list.pop()
+        newList.append(i)
 
-sum = 0
-for i in range(len(list)):
-    sum = sum + list[i]
 
-print sum
+print(sum(newList))
