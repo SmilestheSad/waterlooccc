@@ -37,7 +37,6 @@ def pascalT(n,m):
         return 1
     return pascalT(n-1,m) + pascalT(n-1,m-1)
 
-
 print(pascalT(6,3))  # 10
 print(pascalT(5,2))  # 4
 
