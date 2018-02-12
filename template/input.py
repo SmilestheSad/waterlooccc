@@ -4,25 +4,21 @@
 # type <inputfilename> | python <yourpython.py>
 #
 # Option2: From STDIN keyboard
-# python <yourpython.py>
+# python <yourpython.py>  ( or right click code and select "Run python code in terminal")
 # type input and enter...... <Control>+<Z> followed by <Enter> ends input
-
-
-from sys import stdin
-def readInput():
-    inputList=[]
-    for line in stdin:
-        inputList.append(line.strip())
-    return inputList    
-
 
 def readFile(filename):
     f = open(filename, 'r')
     inputList = f.read().splitlines()
     return inputList
 
-vInput = readInput() 
-print(vInput)   
+from sys import stdin
+vInput = [ x.strip() for x in stdin]
+print(vInput)
+
+
+# vInput = readInput() 
+# print(vInput)   
 
 #Sample Input input1.txt 2016/J2
 # 1 2 3 4

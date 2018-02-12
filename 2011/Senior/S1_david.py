@@ -8,7 +8,7 @@
 #vInput=['3','The red cat sat on the mat.','Why are you so sad cat?','Don’t ask that.']
 vInput=['3','Lorsque j’avais six ans j’ai vu, une fois,','une magnifique image,','dans un livre']
 
-textList=vInput[2:]
+textList=vInput[1:]
 
 countT=sum([ s.count('T') for s in textList]) + sum([ s.count('t') for s in textList])
 countS=sum([ s.count('S') for s in textList]) + sum([ s.count('s') for s in textList])

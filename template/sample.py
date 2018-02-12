@@ -1,22 +1,19 @@
 # Import and readinput function
 from sys import stdin
 from collections import Counter  # useful for sort,group/unique,count
-from math import sqrt, factorial, ceil
-
-def readInput():
-    inputList = []
-    for line in stdin:
-        inputList.append(line.strip())
-    return inputList
+from math import sqrt, factorial, ceil,floor,
+from statistics import mean,median,median_high,median_grouped,median_high,mode
 
 
-############ Normalized Input into variable(s)
-vInput = readInput()
+#Put input into a list
+vInput = [ x.strip() for x in stdin]
 #vInput = ['3','6','3 5 7 8','6 9 34 1']
+
+#Process Input VAR
 inputVar1 = vInput[0]
 inputVar2 = int(vInput[1])
 inputList1 = vInput[2:]   # ['3','5','7','8']
-inputList1 = [int(x) for x in inputList1].sort()
+inputList1 = [int(x) for x in inputList1.split()].sort()
 intList2 = [ int(x) for x in vInput[2:] if ( int(x)%2 == 0 )]
 
 #Create initial variable for output

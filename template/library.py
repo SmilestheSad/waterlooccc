@@ -19,11 +19,12 @@ print(shiftNumber(12, 3))
 
 def getFactor(n):
     factorList = [1, n]
-    for i in range(2, n):
-        if (n % i == 0):
-            factorList.append(i)
-    return factorList
-# print(getFactor(124))
+    # for i in range(2, n):
+    #     if (n % i == 0):
+    #         factorList.append(i)
+    factors = [ x for x in range(2,n) if (n%x == 0)]
+    return factorList + factors
+print(getFactor(124))
 
 
 def isPrime(n):
@@ -68,15 +69,33 @@ def mins2Clock(mins):
 import math
 
 
-def combination(n, r):
+def combinationNumber(n, r):
     # n!/((n-r)! * r!)
     return int(math.factorial(n)/(math.factorial(n-r) * math.factorial(r)))
 
 
-def permutations(n, r):
+def permutationsNumber(n, r):
     # n!/(n-r)!
     return int(math.factorial(n)/math.factorial(n-r))
-# print(combination(4,3),permutations(4,3))
+# print(combinationNumber(4,3),permutationsNumber(4,3))
+
+
+from itertools import permutations,combinations,product
+
+# permutations('ABCD', 2) --> AB AC AD BA BC BD CA CB CD DA DB DC
+# permutations(range(3)) --> 012 021 102 120 201 210
+var1 = list(permutations('ABCD',2))
+
+
+# combinations('ABCD', 2) --> AB AC AD BC BD CD
+# combinations(range(4), 3) --> 012 013 023 123
+var2 = list(combinations('ABCD',2))
+
+
+# product('ABCD', 'xy') --> Ax Ay Bx By Cx Cy Dx Dy
+# product(range(2), repeat=3) --> 000 001 010 011 100 101 110 111
+var3 = list(product('ABCD', 'xy'))
+
 
 
 # Data Set sort,unique and count

@@ -34,6 +34,7 @@ print(s3.replace('a', ''))  # bcbcddd
 # sharks,crustaceans,plankton
 print(",".join(["sharks", "crustaceans", "plankton"]))
 
+# String Format Print
 year, month, day, hour, mins = 2017, 1, 23, 1, 4
 # %02d means padding string "0", print width 2, "d" means a int(digit) variable will be placed
 print("%d-%02d-%02d  %02d:%02d" % (year, month, day, hour, mins))
@@ -45,10 +46,3 @@ vString1, vString2 = "*", ' '
 n = 3
 for i in range(4):
     print(vString1 + vString2*n + vString1 + vString2*n + vString1)
-
-
-# https://www.python-course.eu/python3_formatted_output.php
-
-# http://www.cemc.uwaterloo.ca/contests/computing/2011/stage1/seniorEn.pdf  S1 , English or French
-# 2015 J2/J3, 2014 J2
-# http://www.cemc.uwaterloo.ca/contests/computing/2014/stage%201/juniorEn.pdf J2
