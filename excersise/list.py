@@ -1,4 +1,9 @@
 l = [ '1','2','3', '4','10','1']
+#Create list clone
+l2=l
+l.pop()  # l = [ '1','2','3', '4','10'] , l2 is changed too.
+l2=l[:]
+
 
 # Convert all element to int  [1,2,3,4,10,1]
 
@@ -24,8 +29,3 @@ list2 =[3,4,7,10]
 # Join two list   output: [3,5,6,8,3,5,6,8]
 
 # sum each element [ 3+3,5+5,6+7,8+10]
-
-# https://dmoj.ca/problem/nccc5j2
-#6
-#1 1 2 2 4 5 
-#Get most frequent number. If more than 1, select smallest one

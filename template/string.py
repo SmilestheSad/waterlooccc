@@ -9,6 +9,7 @@ sList = "1 2 5 6 9 10"
 # Convert string to list and get subset ['5', '6','9']
 sListNew = sList.split()[2:4]
 
+
 # OUTPUT: False False True True False
 print(ss.isnumeric(), ss.isupper(), ss.islower(),
       ss.startswith("sa"), ss.endswith("victor"))
@@ -17,13 +18,6 @@ print(ss.isnumeric(), ss.isupper(), ss.islower(),
 sHappy = "I’m happy-:).I’m sad-:(  I’m happy again-:)"  # 2015/J2
 happyCount = sHappy.count('-:)')
 sadCount = sHappy.count('-:(')
-# Count sub-string occurance
-happySplitList = sHappy.split("-:)")
-sadSplitList = sHappy.split('-:(')
-# ['I’m happy', '.I’m sad-:(  I’m happy again', '']
-happyCount = len(sHappy.split("-:)")) - 1
-# ['I’m happy-:).I’m sad', '  I’m happy again-:)']
-sadCount = len(sHappy.split("-:(")) - 1
 
 # Remove Certain string
 s3 = "abcaaabcdddaaa"

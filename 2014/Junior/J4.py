@@ -3,30 +3,25 @@
 # relatively straight forward 1D array processing
 # (element removal and modulo arithmetic)
 #
+from sys import stdin
 
-file = open ("j4.5.in", "r")
-k = int(file.readline())
+#vInput=[x.strip() for x in stdin]
 
-#create friends array [1...k]
-friends = []
-for i in range (k):
-    friends.append(i+1)
+vInput=['10','2','2','3']
 
-m = int(file.readline())
+k=int(vInput[0])
+m=int(vInput[1])
+roundList=list(map(int,vInput[2:]))
+friendList=list(range(1,k+1))
 
-for round in range(m):
-    r = int(file.readline())
+for i in range(m):
+    newList=[]
+    removeR=roundList[i]
+    for j in range(len(friendList)):
+        if (j+1) % removeR != 0:
+            newList.append(friendList[j])
+    friendList = newList[:]        
 
-    # eliminate every rth friend
-    newfriends = []
-    for i in range(len(friends)):
-        if (i+1) % r != 0:
-            newfriends.append (friends[i])
 
-    # copy the new friends back into the old one
-    friends = []
-    for f in newfriends:
-        friends.append(f)
-
-for f in friends:
-    print f
+for f in friendList:
+    print(f)

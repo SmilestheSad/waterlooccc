@@ -8,6 +8,7 @@ def dosomething(x):
     return x*2
 
 newlist = [ dosomething(x) for x in list1] #
+newlist = list(map(dosomething,list1))  # same as above. map function iterate fun to each element 
 
 
 s = "0 1 2 3"
@@ -20,7 +21,10 @@ newlist =  [ x for x in s.split()]  #
 newlist =  [ len(x) for x in s.split()]
 
 s="abcdec"
-newList = [ x*2 for x in s]
+newlist = [ x*2 for x in s]
 newlist = [ x.upper() for x in s if x in ['a','b','c']]
 
-print('test')
+#Generate a list
+
+newlist = [ x**2 for x in range(1,5)] # [1,4,9,16]
+

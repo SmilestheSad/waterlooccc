@@ -14,8 +14,4 @@ var2 = list(combinations('ABCD',2))
 # product(range(2), repeat=3) --> 000 001 010 011 100 101 110 111
 var3 = list(product('ABCD', 'xy'))
 
-
-
-
-
 print(var1)

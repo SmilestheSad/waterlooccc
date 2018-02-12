@@ -1,10 +1,6 @@
 from sys import stdin
-def readInput():
-    inputList = []
-    for line in stdin:
-        inputList.append(line.strip())
-    return inputList
-vInput = readInput()
+vInput = [x.strip() for x in stdin]
+
 # vInput = ['3','The red cat sat on the mat.','Why are you so sad cat?','Don’t ask that.']
 inputList1 = vInput[1:]
 
