@@ -11,9 +11,9 @@
 # for 'not found' conditions.
 #
 from sys import stdin
-# vInput=[ x.strip() for x in stdin]
-vInput=['4','Ada Alan Grace John','John Grace Alan Ada']
-vInput=['7','Rich Graeme Michelle Sandy Vlado Ron Jacob','Ron Vlado Sandy Michelle Rich Graeme Jacob']
+vInput=[ x.strip() for x in stdin]
+# vInput=['4','Ada Alan Grace John','John Grace Alan Ada']
+# vInput=['7','Rich Graeme Michelle Sandy Vlado Ron Jacob','Ron Vlado Sandy Michelle Rich Graeme Jacob']
 n=int(vInput[0])
 first=vInput[1].split()
 second=vInput[2].split()
