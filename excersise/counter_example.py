@@ -19,7 +19,7 @@ dict(c)                         # convert to a regular dictionary {'a': 1, 'b': 
 c.most_common()  # [('d', 4), ('c', 3), ('b', 2), ('a', 1)]
 c['d']  # 4
 mostFrequentLetter = cList[0][0]  # d
-mostFrequentCount = cList[0][1]
+mostFrequentCount = cList[-1][1]
 sum(c.values())                 # total of all counts 10
 
 

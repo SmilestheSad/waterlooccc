@@ -4,7 +4,7 @@ def checkClock(mins):
         hour = 12
     mins = mins % 60
     # convert to string
-    clockString = "%0d%02d" % (hour, mins)
+    clockString = "%d%02d" % (hour, mins)
     result = 1
     diff = int(clockString[1]) - int(clockString[0])
     for i in range(2, len(clockString)):

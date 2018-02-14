@@ -1,16 +1,6 @@
 from sys import stdin
-
-
-def readInput():
-    inputList = []
-    for line in stdin:
-        inputList.append(line.strip())
-    return inputList
-
-
-vInput = readInput()
+vInput = [x.strip() for x in stdin]
 #vInput=['10 2','10 4','5']
-print(vInput)
 steps = int(vInput[2])
 startPoint = vInput[0].split()
 endPoint = vInput[1].split()

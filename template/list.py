@@ -20,6 +20,7 @@ squares.pop()  # remove last element and return popped element
 #[100, 49, 25, 16, 9, 4]
 squares.insert(3, 9999)  # insert 999 at index 3 (after fourth element)
 #[100, 49, 25, 9999, 16, 9, 4]
+list(set(squares)) #gerate a distinct list(remove duplicate)
 
 # List  Operation
 listTest1= [1,1,3,4,34,3]
@@ -48,7 +49,7 @@ aString = "1 2 5 6 9 10"
 # convert sList to list and convert list element to int
 sListInt = [int(x) for x in aString.split()]
 # convert sList to list and convert list element to int and power
-sListInt1 = [int(x)**2 for x in aString.split()] # [1, 2, 5, 6, 9, 10]
+sListInt1 = [int(x)**2 for x in aString.split()] # 
 sList1 = "aa bb ccdd aadd ee"
 # generate list with length of string for each element
 sListNew = [len(s) for s in sList1.split()]   # [2, 2, 4, 4, 2]

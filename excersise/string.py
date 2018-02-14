@@ -37,8 +37,11 @@ i=13
 
 #get 10th digit
 
-#Product largest possible number using those digits output: 9852
-
-
-
-
+i=5282
+#Product largest possible number using those digits output: 8522
+dab = list(str(i))
+dab = [int(x) for x in dab]
+dab.sort(reverse=True)
+dab = [str(x) for x in dab]
+number = ''.join(dab)
+print(number)
