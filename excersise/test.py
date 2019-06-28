@@ -1,4 +1,3 @@
-s = "abc"
+a=[0,1]
 
-print(s.index('a'))
-
+print(a[-2:])
